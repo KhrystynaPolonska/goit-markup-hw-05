@@ -323,7 +323,7 @@ display: block;
 }
 
 .team-item-text {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
@@ -461,11 +461,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 	display: flex;
 	align-items: baseline;
 }
-
 .footer-content {
-margin-right: 120px;
+max-width: 264px;
+text-align: left;
 }
-
 .footer-logo {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -476,29 +475,28 @@ margin-right: 120px;
 	text-transform: uppercase;
 
 }
-
 .footer-logo-style {
 	color: #f4f4fd;
 }
-
 .footer-item-text {
-	font-weight: 500;
+	font-weight: 400;
+	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	margin-bottom: 16px;
-
+	margin-top: 16px;
 	color: #F4F4FD;
-	max-width: 264px;
-	text-align: left;
- /*margin-right: 120px;*/	
+	min-width: 264px;
 }
 
 
 /* social place */
 
 .social {
-padding-left: 384px;
-text-align: left;
+position: absolute;
+right: 692px;
+left: 540px;
+ text-align: left;
 }
 .social-list {
 	display: flex;
@@ -542,28 +540,34 @@ background-color: #31d0aa;
 
 /*subscribe place*/
 .subscribe {
-max-width: 453px;
+min-width: 453px;
 height: 80px;
-top: 0%;
-left: 100%;
-display: flex;
+/*top: 0%;
+left: 100%*/
 align-items: center;
-align-content: flex-end;
+justify-content: flex-end;
+	position: relative;
+	left: 408px;
+	right: 0;
 }
 .sub-text {
-font: font-family;
+font: "Roboto", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: #ffffff;
 	margin-bottom: 16px;
+text-align: left;
 }
 .subs-form {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	gap:24px;
 padding: 8px 0px 8px 16px;
 position: relative;
+/*display: inline-block;*/
 }
 
 .subs-form-label {
@@ -605,6 +609,8 @@ padding: 8px 16px 8px 24px;
 	display: flex;
 	justify-content: center;
 	cursor: pointer;
+
+ /*display: inline-block;*/
 	/*top: 0%;
 	left: 100%;
 	align-items: center;
@@ -700,7 +706,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		font-size: 12px;
 		line-height: 117%;
 		letter-spacing: 0.04em;
-		color: var(--light-slate);
+		color: #8e8f99;
  display: block;
  margin-bottom: 4px;
 margin-top: 8px;
