@@ -599,6 +599,7 @@ letter-spacing: 0.04em;
 color: #ffffff;
 background-color: #4d5ae5;
 text-align: center;
+align-items: center;
 padding: 8px 16px 8px 24px;
  min-width: 165px;
  height: 40px;
@@ -640,6 +641,7 @@ transition-property: visibility, opacity, pointer-events;
  visibility: hidden;
  opacity: 0;
  pointer-events: none;/*для приховання backdrop*/
+ transition: opacity 250ms cubic-bezier(0.4,0,0.2,1) visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
 width: 408px;
@@ -650,6 +652,8 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+box-shadow: 0px 1px 1px rgba(0,0,0,0.14,), 0px 1px 3px rgba(0, 0, 0, 0.12, ) 0px 2px 1px rgba(0,0,0,0.2);
+transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
 padding: 72px 24px 24px 24px;
 }
 .backdrop.is-open {
@@ -658,9 +662,6 @@ opacity: 1;
 pointer-events: auto;
 }
 .close-btn {
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
 	background-color: #e7e9fc;
 	position: absolute;
 	top: 24px;
@@ -671,13 +672,18 @@ pointer-events: auto;
 	stroke: rgba(0, 0, 0, 0.1);
 	transition: stroke 250ms cubic-bezier(0.075, 0.82, 0.165, 1);border-radius: 100%;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	justify-content: center;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
 	/*background-color: transparent;
 	fill: #E7E9FC;
     stroke-width: 1px;*/
 }
 .close-btn:hover,
 .close-btn:focus {
-stroke: #ffffff;
+border: none;
+fill: #ffffff;
 background-color: #404BBF;
 }
 
@@ -693,10 +699,11 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		text-align: center;
 	max-width: 360px;
 	margin-bottom: 16px;
-
+color: #2e2f42;
 }
 .modal-container-block {
-	margin-bottom: 26px;
+	margin-bottom: 8px;
+
 }
 
 .modal-form-label {
@@ -713,6 +720,7 @@ margin-top: 8px;
 
 .modal-form-input-cont {
 	position: relative;
+	margin-bottom: 16px;
 }
 
 .modal-form-input {
@@ -775,8 +783,8 @@ color: #4d5ae5;
 }
 .checkbox:checked + .label-checkbox .custom-checkbox {
 background-color: #404BBF;
-border: transparent;
 fill: #F4F4FD;
+border: none;
 }
 .user-comment {
 	border: 1px solid rgba(46, 47, 66, 0.4);
@@ -785,6 +793,14 @@ fill: #F4F4FD;
 	height: 120px;
 	padding: 8px 16px;
 	resize: none;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: rgba(46,47,66,0.4);
+background-color: transparent;
+outline: transparent;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .user-comment:focus {
 	border: 1px solid #4d5ae5;
