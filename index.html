@@ -391,7 +391,7 @@
             <p class="sub-text">Subscribe</p>
             <form class="subs-form">
                 <label class="subs-form-label" for="subs-mail">
-                <input class="subs-input" type="text" id="subs-mail" name="subscribe" placeholder="E-mail" /></label>
+                <input class="subs-input" type="email" id="subs-mail" name="subscribe" placeholder="E-mail"></label>
            
             <button class="subs-button" type="submit">Subscribe<svg class="icon-send-btn" width="24" height="24">
                     <use href="./imagess/icons.svg#icon-iconsend"></use>
@@ -416,22 +416,24 @@
     </p>
     <form class="modal-form">
         <div class="modal-container-block">
-            <label class="modal-form-label" for="user-text">Name</label>
+            <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-form-input-cont">
-            <input class="modal-form-input" required type="text" id="user-text" name="user-text">
+            <input class="modal-form-input" required type="text" id="user-name" name="user-name">
             <svg width="18" height="24" class="modal-form-icon">
                 <use href="./imagess/icons.svg#icon-person"></use>
             </svg>
             </div>
+        </div>
 
             <div class="modal-container-block">
                 <label class="modal-form-label" for="user-phone">Phone</label>
                 <div class="modal-form-input-cont">
-                    <input class="modal-form-input" required type="phone" id="user-phone" name="user-phone">
+                    <input class="modal-form-input" required type="tel" id="user-phone" name="user-phone">
                     <svg width="18" height="24" class="modal-form-icon">
                         <use href="./imagess/icons.svg#icon-phone"></use>
                     </svg>
                 </div>
+            </div>
 
                     <div class="modal-container-block">
                         <label class="modal-form-label" for="user-email">Email</label>
@@ -442,11 +444,9 @@
                             </svg>
                         </div>
         </div>
-        <div>
+        <div class="modal-container-block">
             <label  class="modal-form-label" for="user-comment" >Comment</label>
-                <textarea name="user-comment" placeholder="Text input" id="user-comment" class="user-comment" ></textarea>
-
-            
+                <textarea name="user-comment" placeholder="Text input" id="user-comment" class="user-comment" ></textarea> 
         </div>
 
         <div class="modal-form-con-checkbox">

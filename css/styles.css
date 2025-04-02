@@ -430,7 +430,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 	opacity: 0;
 	transform: translateY(100%);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	opacity: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portf-image {
 	margin-bottom: 32px;
@@ -551,7 +550,7 @@ justify-content: flex-end;
 	right: 0;
 }
 .sub-text {
-font: "Roboto", sans-serif;
+font-family: "Roboto",sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
@@ -723,6 +722,8 @@ margin-top: 8px;
 	border-radius: 4px;
 	padding-left: 38px;
 	outline: transparent;
+	background-color: transparent;
+	transition: border-color 250ms cubic-bezier(0.4,0,0.2,1);
 
 }
 .modal-form-input:focus {
@@ -735,13 +736,14 @@ margin-top: 8px;
 	fill: transparent;
 	stroke: #2e2f42; 
 	transform: translateY(-50%);
+	transition: fill 250ms cubic-bezier(0.4,0,0.2,1);
 
 }
 .modal-form-con-checkbox {
 	margin-bottom: 24px;
 }
 .modal-form-input + .modal-form-icon {
-stroke: #4d5ae5;
+fill: #4d5ae5;
 }
 .custom-checkbox {
 	border-radius: 2px;
