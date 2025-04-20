@@ -755,7 +755,9 @@ color: #2e2f42;
 	position: relative;
 	margin-bottom: 16px;
 }
-
+.modal-form-input-cont:focus {
+	border-color: #4D5AE5;
+}
 .modal-form-input {
 	height: 40px;
 	width: 100%;
