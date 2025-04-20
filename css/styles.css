@@ -587,8 +587,8 @@ text-align: left;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap:24px;
-padding: 8px 0px 8px 16px;
+	gap: 24px;
+/* padding: 8px 0px 8px 16px; */
 position: relative;
 /*display: inline-block;*/
 }
@@ -644,7 +644,7 @@ padding: 8px 16px 8px 24px;
 }
 
 .subs-button:hover,
-.msubs-button:focus {
+.subs-button:focus {
 background-color: #404BBF;
 }
 .icon-send-btn {
