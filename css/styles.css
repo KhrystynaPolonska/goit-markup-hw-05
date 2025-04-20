@@ -783,8 +783,8 @@ color: #2e2f42;
 .modal-form-con-checkbox {
 	margin-bottom: 24px;
 }
-.modal-form-input + .modal-form-icon:focus {
-fill: #4d5ae5;
+.modal-form-input:focus + .modal-form-icon {
+	fill: #4d5ae5;
 }
 .custom-checkbox {
 	border-radius: 2px;
